@@ -23,4 +23,21 @@ html .title-text {
   color: black;
   text-align: center;
   margin-top: 4em;
+}
+html .switcher {
+  background-color: #FAFAFA;
+  border-radius: 3.2em;
+  border: none;
+  width: 17.3em;
+  height: 1.9em;
+  display: block;
+  margin: 0 auto;
+}
+html .switcher_greytext {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  color: #AFAFAF;
+  text-align: right;
+  margin-right: 2.6em;
 }/*# sourceMappingURL=style.css.map */
