@@ -170,6 +170,13 @@ html::after {
     flex-direction: column;
   }
   .prices .price_1, html .prices .price_2, html .prices .price_3, .prices .price_2, .prices .price_3 {
-    width: 330px;
+    width: 332px !important;
+  }
+
+  html::after {
+    display: block;
+    width: 100%;
+    height: 133px;
+    background-image: url(./wave2.svg);
   }
 }/*# sourceMappingURL=style.css.map */

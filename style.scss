@@ -173,11 +173,20 @@ html {
         flex-direction: column;
         
         .price_1, .price_2, .price_3{
-            width: 330px;
+            width: 332px !important;
         }
 
         
        
     }
 
+    html::after{
+        display: block;
+        width: 100%;
+        height: 133px;
+        background-image: url(./wave2.svg);
+        // position: absolute;
+        // bottom: 0px;
+        // z-index: -1;
+    }   
 }
