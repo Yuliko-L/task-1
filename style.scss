@@ -10,7 +10,8 @@
 
 html {
     font-size: 62.5%;
-  
+    position: relative;
+    z-index: 1;
 
     h1 {
         @include text (4rem, 700, 4.8rem, black);
@@ -73,6 +74,7 @@ html {
             position: relative;
             width: 390px;
             height: 510px;
+            background-color: white;
             border-radius: 1.6em;
             border: none;
             box-shadow: 0px 10px 20px 0px rgba(0, 40, 100, 0.25);
@@ -143,8 +145,39 @@ html {
         }
     }
 
-    ::after{
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 519px;
         background-image: url(./wave.svg);
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
     }
     
+}
+
+@media screen and (max-width: 450px) {
+    .title-text{
+        display: block;
+        margin: 0 auto;
+        width: 328px;
+    }
+    .switcher{
+        display: none !important;
+    }
+    
+    .prices{
+        display: flex;
+        flex-direction: column;
+        
+        .price_1, .price_2, .price_3{
+            width: 330px;
+        }
+
+        
+       
+    }
+
 }
