@@ -14,7 +14,7 @@ html h1 {
   line-height: 4.8rem;
   color: black;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 80px;
 }
 html .title-text {
   font-size: 1.6rem;
@@ -22,22 +22,124 @@ html .title-text {
   line-height: 2.8rem;
   color: black;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 40px;
 }
 html .switcher {
   background-color: #FAFAFA;
   border-radius: 3.2em;
   border: none;
-  width: 17.3em;
-  height: 1.9em;
+  width: 235px;
+  height: 40px;
   display: block;
   margin: 0 auto;
+  margin-top: 32px;
+  position: relative;
 }
 html .switcher_greytext {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.9rem;
   color: #AFAFAF;
-  text-align: right;
-  margin-right: 2.6em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 26px;
+  padding-top: 10px;
+}
+html .switcher_bluepart {
+  width: 120px;
+  height: 40px;
+  background-color: #0066FF;
+  border-radius: 3.2em;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+html .switcher_bluepart .bluetext {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  color: white;
+  padding-top: 10px;
+  padding-left: 26px;
+}
+html .prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 180px;
+}
+html .prices .price_1, html .prices .price_3, html .prices .price_2 {
+  position: relative;
+  width: 390px;
+  height: 510px;
+  border-radius: 1.6em;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgba(0, 40, 100, 0.25);
+}
+html .prices .price_1 .price_name, html .prices .price_3 .price_name, html .prices .price_2 .price_name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+  color: black;
+  text-align: center;
+  margin-top: 32px;
+}
+html .prices .price_1 .price_number, html .prices .price_3 .price_number, html .prices .price_2 .price_number {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: black;
+  text-align: center;
+  margin-top: 16px;
+}
+html .prices .price_1 ul, html .prices .price_3 ul, html .prices .price_2 ul {
+  margin-left: 36px;
+  margin-top: 64px;
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: black;
+}
+html .prices .price_1 ul li, html .prices .price_3 ul li, html .prices .price_2 ul li {
+  margin-top: 24px;
+}
+html .prices .price_1 ul li:before, html .prices .price_3 ul li:before, html .prices .price_2 ul li:before {
+  color: #0066FF;
+  content: url(./marker.svg);
+  margin-right: 15px;
+}
+html .prices .price_1 .ghost-button, html .prices .price_3 .ghost-button, html .prices .price_2 .ghost-button {
+  width: 222px;
+  height: 63px;
+  background-color: white;
+  border-radius: 0.8em;
+  border: 1px solid #cccccc;
+  position: absolute;
+  bottom: 37px;
+  left: 84px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  color: #cccccc;
+}
+html .prices .price_2 .ghost-button {
+  width: 222px;
+  height: 63px;
+  background-color: #0066FF;
+  border-radius: 0.8em;
+  border: none;
+  position: absolute;
+  bottom: 37px;
+  left: 84px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  color: white;
+}
+html ::after {
+  background-image: url(./wave.svg);
 }/*# sourceMappingURL=style.css.map */
